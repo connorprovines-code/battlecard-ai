@@ -4,9 +4,8 @@
  */
 
 export const URLS = {
-  // IMPORTANT: Replace with your actual Calendly booking link
-  // Example: 'https://calendly.com/your-name/battlecard-ai-demo'
-  CALENDLY_BOOKING: 'https://calendly.com/battlecard-ai/demo', // TODO: Update with real Calendly link
+  // Calendly booking link
+  CALENDLY_BOOKING: 'https://calendly.com/connorprovines/30min',
 
   // Social & Legal Pages
   PRIVACY_POLICY: '/privacy', // TODO: Create privacy policy page
