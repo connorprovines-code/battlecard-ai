@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, DollarSign, Clock, MessageSquare, Database } from 'lucide-react';
 import Footer from '../components/landing/Footer';
+import SEO from '../components/SEO';
 
 export default function KlueAlternative() {
   const comparison = [
@@ -68,6 +69,12 @@ export default function KlueAlternative() {
 
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Klue Alternative: Deeper Research, No Character Limits, 96% Lower Cost | BattleCard AI"
+        description="Get 20+ page battlecards vs Klue's 2,000 character limits. Slack-native, $199/month vs $60k/year. Zero adoption friction, instant setup."
+        keywords="klue alternative, klue competitor, competitive intelligence platform, klue pricing alternative, battlecard software"
+        url="https://battlecard.ai/klue-alternative"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-indigo-50">
         <div className="max-w-7xl mx-auto px-6">

@@ -8,6 +8,7 @@ import PricingSection from '../components/landing/PricingSection';
 import ComparisonTable from '../components/landing/ComparisonTable';
 import FinalCTA from '../components/landing/FinalCTA';
 import Footer from '../components/landing/Footer';
+import SEO from '../components/SEO';
 
 export default function Home() {
   useEffect(() => {
@@ -49,6 +50,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO />
       <HeroSection />
       <ProblemSection />
       <SolutionSection />

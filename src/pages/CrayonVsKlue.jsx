@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check, X } from 'lucide-react';
 import Footer from '../components/landing/Footer';
+import SEO from '../components/SEO';
 
 export default function CrayonVsKlue() {
   const comparison = [
@@ -126,6 +127,12 @@ export default function CrayonVsKlue() {
 
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Crayon vs Klue vs BattleCard AI: Complete Comparison 2025"
+        description="Side-by-side comparison of Crayon, Klue, and BattleCard AI. Compare pricing ($60k vs $199/mo), features, research depth, and find the best fit for your team."
+        keywords="crayon vs klue, competitive intelligence comparison, battlecard software comparison, crayon klue alternative"
+        url="https://battlecard.ai/crayon-vs-klue"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-indigo-50">
         <div className="max-w-7xl mx-auto px-6">

@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check, X, DollarSign, Clock, Zap, Database } from 'lucide-react';
 import Footer from '../components/landing/Footer';
+import SEO from '../components/SEO';
 
 export default function CrayonAlternative() {
   const comparison = [
@@ -68,6 +69,12 @@ export default function CrayonAlternative() {
 
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Crayon Alternative: Enterprise Competitive Intelligence at 1/100th the Price | BattleCard AI"
+        description="Save $58k+/year with BattleCard AI vs Crayon. Same competitive intelligence depth (20+ pages) at $199/month. 2-minute setup, Slack-native access."
+        keywords="crayon alternative, crayon competitor, competitive intelligence software, battlecard software, crayon pricing alternative"
+        url="https://battlecard.ai/crayon-alternative"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-indigo-50">
         <div className="max-w-7xl mx-auto px-6">

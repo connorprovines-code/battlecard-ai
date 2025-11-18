@@ -5,6 +5,9 @@ import CrayonAlternative from "./CrayonAlternative";
 import KlueAlternative from "./KlueAlternative";
 import Blog from "./Blog";
 import CrayonVsKlue from "./CrayonVsKlue";
+import Competitors from "./Competitors";
+import BlogHowToBuild from "./BlogHowToBuild";
+import BlogKluePricing from "./BlogKluePricing";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -14,6 +17,9 @@ const PAGES = {
     KlueAlternative: KlueAlternative,
     Blog: Blog,
     CrayonVsKlue: CrayonVsKlue,
+    Competitors: Competitors,
+    BlogHowToBuild: BlogHowToBuild,
+    BlogKluePricing: BlogKluePricing,
 }
 
 function _getCurrentPage(url) {
@@ -43,6 +49,9 @@ function PagesContent() {
                 <Route path="/klue-alternative" element={<KlueAlternative />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/crayon-vs-klue" element={<CrayonVsKlue />} />
+                <Route path="/competitors" element={<Competitors />} />
+                <Route path="/blog/how-to-build-battlecards" element={<BlogHowToBuild />} />
+                <Route path="/blog/klue-pricing" element={<BlogKluePricing />} />
             </Routes>
         </Layout>
     );

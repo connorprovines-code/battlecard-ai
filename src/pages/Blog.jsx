@@ -2,10 +2,17 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Footer from '../components/landing/Footer';
+import SEO from '../components/SEO';
 
 export default function Blog() {
   return (
     <div className="min-h-screen bg-white pt-16">
+      <SEO
+        title="Why I Built BattleCard AI: A Better Alternative to Crayon & Klue"
+        description="The founder story behind BattleCard AI. Why $60k/year for competitive intelligence doesn't work for startups, and how we built a better alternative at $199/month."
+        keywords="battlecard ai founder story, crayon alternative story, competitive intelligence startup, why build battlecard ai"
+        url="https://battlecard.ai/blog"
+      />
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-slate-50 via-white to-indigo-50">
         <div className="max-w-4xl mx-auto px-6">
