@@ -6,7 +6,7 @@ export default function PricingSection() {
   const features = [
     "Unlimited battlecard generation",
     "Real-time Slack Q&A",
-    "40k+ token depth per battlecard",
+    "Deep-research battlecards (20+ pages)",
     "Automatic updates & monitoring",
     "Notion knowledge base integration",
     "Compare mode (you vs. competitor)"

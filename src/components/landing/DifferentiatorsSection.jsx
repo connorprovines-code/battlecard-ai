@@ -6,7 +6,7 @@ export default function DifferentiatorsSection() {
     {
       icon: Database,
       title: "Unmatched Depth",
-      description: "We max out AI token limits (40k+) to deliver battlecards with the scope and detail of $50k platforms—competitive positioning, SWOT analysis, customer pain points, tactical discovery questions, and real customer quotes.",
+      description: "20+ pages of deep research per battlecard—including full review data mining, customer quotes, competitive positioning, SWOT analysis, tactical discovery questions, and objection handling. Our AI synthesizes all this context into instant Slack answers.",
       gradient: "from-purple-500 to-indigo-600"
     },
     {
@@ -67,8 +67,8 @@ export default function DifferentiatorsSection() {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center gap-8 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl px-10 py-6 border border-indigo-100">
             <div className="text-center">
-              <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">40k+</div>
-              <div className="text-sm text-gray-600 mt-1">Token Depth</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">20+ Pages</div>
+              <div className="text-sm text-gray-600 mt-1">Research Depth</div>
             </div>
             <div className="h-12 w-px bg-gray-300"></div>
             <div className="text-center">

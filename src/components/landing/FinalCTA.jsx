@@ -54,8 +54,8 @@ export default function FinalCTA() {
             <div className="text-indigo-200">Saved vs. Crayon</div>
           </div>
           <div>
-            <div className="text-4xl font-bold mb-2">40k+</div>
-            <div className="text-indigo-200">Token depth</div>
+            <div className="text-4xl font-bold mb-2">20+ Pages</div>
+            <div className="text-indigo-200">Research per card</div>
           </div>
         </div>
       </div>

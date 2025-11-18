@@ -159,7 +159,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <div className="font-bold text-gray-900">Instant Intel</div>
-                  <div className="text-sm text-gray-600">40k+ tokens</div>
+                  <div className="text-sm text-gray-600">20+ pages per card</div>
                 </div>
               </div>
             </div>

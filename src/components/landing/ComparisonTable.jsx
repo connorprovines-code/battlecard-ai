@@ -4,7 +4,7 @@ import { Check, X } from 'lucide-react';
 export default function ComparisonTable() {
   const features = [
     { name: "Price", crayon: "$50k-$100k/year", battlecard: "$199/month", highlight: true },
-    { name: "Battlecard Depth", crayon: true, battlecard: "40k+ tokens", highlight: false },
+    { name: "Battlecard Depth", crayon: "Concise summaries (1-2 pages)", battlecard: "Deep research (20+ pages)", highlight: false },
     { name: "Real-Time Updates", crayon: true, battlecard: true, highlight: false },
     { name: "Slack Native", crayon: false, battlecard: true, highlight: true },
     { name: "Setup Time", crayon: "Weeks", battlecard: "Minutes", highlight: false },
