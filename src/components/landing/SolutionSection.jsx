@@ -69,7 +69,7 @@ export default function SolutionSection() {
               </h3>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                Ask questions like "How do we beat Salesforce on price?" Get instant answers with discovery questions, objection handling, and competitive positioning—sourced from 40k+ token databases for unparalleled depth.
+                Ask questions like "How do we beat Salesforce on price?" Get instant answers with discovery questions, objection handling, and competitive positioning—powered by 40k+ token depth per battlecard for unparalleled detail.
               </p>
 
               <div className="mt-8 space-y-3">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Check, ArrowRight } from 'lucide-react';
+import { URLS } from '@/config/urls';
 
 export default function PricingSection() {
   const features = [
@@ -56,10 +57,10 @@ export default function PricingSection() {
               </ul>
 
               {/* CTA */}
-              <Button 
+              <Button
                 size="lg"
                 className="w-full text-lg py-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => window.open(URLS.CALENDLY_BOOKING, '_blank')}
               >
                 Get Your First Battlecard Free
                 <ArrowRight className="ml-2 w-5 h-5" />

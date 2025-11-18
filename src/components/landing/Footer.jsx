@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
+import { URLS } from '@/config/urls';
 
 export default function Footer() {
   return (
@@ -27,17 +28,17 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="text-right">
-            <a 
-              href="mailto:hello@battlecard.ai" 
+            <a
+              href={URLS.CONTACT_EMAIL}
               className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors mb-4"
             >
               <Mail className="w-4 h-4" />
               hello@battlecard.ai
             </a>
             <div className="space-x-4 text-sm">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href={URLS.PRIVACY_POLICY} className="hover:text-white transition-colors">Privacy Policy</a>
               <span>·</span>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href={URLS.TERMS_OF_SERVICE} className="hover:text-white transition-colors">Terms of Service</a>
             </div>
           </div>
         </div>

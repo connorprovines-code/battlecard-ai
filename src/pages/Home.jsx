@@ -6,8 +6,11 @@ import DifferentiatorsSection from '../components/landing/DifferentiatorsSection
 import SocialProofSection from '../components/landing/SocialProofSection';
 import PricingSection from '../components/landing/PricingSection';
 import ComparisonTable from '../components/landing/ComparisonTable';
+import FAQSection from '../components/landing/FAQSection';
 import FinalCTA from '../components/landing/FinalCTA';
 import Footer from '../components/landing/Footer';
+import StickyCTA from '../components/landing/StickyCTA';
+import ExitIntentPopup from '../components/landing/ExitIntentPopup';
 
 export default function Home() {
   useEffect(() => {
@@ -56,8 +59,11 @@ export default function Home() {
       <SocialProofSection />
       <PricingSection />
       <ComparisonTable />
+      <FAQSection />
       <FinalCTA />
       <Footer />
+      <StickyCTA />
+      <ExitIntentPopup />
     </div>
   );
 }

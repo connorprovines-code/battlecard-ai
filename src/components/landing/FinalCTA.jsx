@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { URLS } from '@/config/urls';
 
 export default function FinalCTA() {
   return (
@@ -29,10 +30,10 @@ export default function FinalCTA() {
 
         {/* CTA Button */}
         <div className="flex flex-col items-center gap-6">
-          <Button 
+          <Button
             size="lg"
             className="text-lg px-12 py-7 bg-white text-indigo-600 hover:bg-gray-50 shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 font-bold"
-            onClick={() => window.open('https://calendly.com', '_blank')}
+            onClick={() => window.open(URLS.CALENDLY_BOOKING, '_blank')}
           >
             Get Your First Battlecard Free
             <ArrowRight className="ml-3 w-6 h-6" />

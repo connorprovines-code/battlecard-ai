@@ -1,0 +1,12 @@
+# Robots.txt for BattleCard AI
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+# TODO: Update with actual domain when deployed
+Sitemap: https://battlecard.ai/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+# Crawl-delay: 1

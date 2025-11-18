@@ -1,5 +1,5 @@
 import React from 'react';
-import { Database, RefreshCw, Sparkles } from 'lucide-react';
+import { Database, RefreshCw, Sparkles, Play } from 'lucide-react';
 
 export default function DifferentiatorsSection() {
   const differentiators = [
@@ -61,6 +61,33 @@ export default function DifferentiatorsSection() {
               <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300 -z-10`}></div>
             </div>
           ))}
+        </div>
+
+        {/* Demo Video Section */}
+        <div className="mt-20">
+          <div className="text-center mb-10">
+            <h3 className="text-3xl font-bold text-gray-900 mb-2">See BattleCard AI in Action</h3>
+            <p className="text-lg text-gray-600">Watch how teams generate battlecards in under 3 minutes</p>
+          </div>
+
+          {/* Video Placeholder - Replace with actual video embed when ready */}
+          <div className="relative aspect-video max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-200">
+            <div className="bg-gradient-to-br from-indigo-100 via-purple-100 to-blue-100 w-full h-full flex items-center justify-center">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white/90 backdrop-blur-sm mb-6 hover:scale-110 transition-transform duration-300 cursor-pointer shadow-xl">
+                  <Play className="w-12 h-12 text-indigo-600 ml-1" />
+                </div>
+                <p className="text-2xl font-bold text-gray-800 mb-2">Demo Video Coming Soon</p>
+                <p className="text-gray-600 max-w-md mx-auto">
+                  Book a demo to see BattleCard AI generate enterprise-grade competitive intelligence in real-time
+                </p>
+                {/* TODO: Replace this placeholder with actual video embed
+                     Recommended: Loom or YouTube embed
+                     Example: <iframe src="https://www.loom.com/embed/..." />
+                */}
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Additional proof point */}
