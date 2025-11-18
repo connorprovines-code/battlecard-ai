@@ -31,7 +31,7 @@ export default function SolutionSection() {
               </h3>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                Mention a competitor in Slack. Get a complete battlecard automatically—website analysis, customer reviews, pricing intel, and attack strategies. No manual research required.
+                Mention a competitor in Slack. Get a complete battlecard automatically: website analysis, customer reviews, pricing intel, and attack strategies. No manual research required.
               </p>
 
               <div className="mt-8 space-y-3">
@@ -69,7 +69,7 @@ export default function SolutionSection() {
               </h3>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                Ask questions like "How do we beat Salesforce on price?" Get instant answers with discovery questions, objection handling, and competitive positioning—sourced from 20+ page deep-research battlecards for unparalleled depth.
+                Ask questions like "How do we beat Salesforce on price?" Get instant answers with discovery questions, objection handling, and competitive positioning, sourced from 20+ page deep-research battlecards for unparalleled depth.
               </p>
 
               <div className="mt-8 space-y-3">

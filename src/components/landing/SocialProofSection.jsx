@@ -14,7 +14,7 @@ export default function SocialProofSection() {
       gradient: "from-purple-500 to-pink-600"
     },
     {
-      quote: "The depth is insane. I've compared it side-by-side with our old Kompyte battlecards—BattleCard AI is more comprehensive and updates in real-time.",
+      quote: "The depth is insane. I've compared it side-by-side with our old Kompyte battlecards, and BattleCard AI is more comprehensive and updates in real-time.",
       role: "Product Marketing Manager, B2B Tech",
       gradient: "from-indigo-500 to-purple-600"
     }

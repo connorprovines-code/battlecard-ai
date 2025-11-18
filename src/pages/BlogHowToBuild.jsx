@@ -48,7 +48,7 @@ export default function BlogHowToBuild() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              You don't need to spend $60,000/year on Crayon or Klue to arm your sales team with competitive intelligence. Here's how to build effective battlecards yourself—and when it makes sense to automate the process.
+              You don't need to spend $60,000/year on Crayon or Klue to arm your sales team with competitive intelligence. Here's how to build effective battlecards yourself, and when it makes sense to automate the process.
             </p>
 
             {/* Section 1 */}
@@ -111,7 +111,7 @@ export default function BlogHowToBuild() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">Step 3: Mine Customer Reviews for Gold</h2>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              This is where most teams get lazy—but it's where the best competitive intel lives. Here's how to do it right:
+              This is where most teams get lazy, but it's where the best competitive intel lives. Here's how to do it right:
             </p>
 
             <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200 mb-8">
@@ -259,7 +259,7 @@ export default function BlogHowToBuild() {
                 Skip the Manual Work
               </h3>
               <p className="text-lg text-gray-700 mb-6">
-                BattleCard AI does everything in this guide automatically—20+ page research, real-time updates, full review mining, and Slack-native access. For $199/month instead of $60k/year.
+                BattleCard AI does everything in this guide automatically: 20+ page research, real-time updates, full review mining, and Slack-native access. For $199/month instead of $60k/year.
               </p>
               <Button
                 size="lg"
@@ -282,7 +282,7 @@ export default function BlogHowToBuild() {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The real question isn't whether you <span className="italic">can</span> do it yourself—it's whether your time is better spent on strategic work or manual competitive research.
+              The real question isn't whether you <span className="italic">can</span> do it yourself; it's whether your time is better spent on strategic work or manual competitive research.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">

@@ -51,7 +51,7 @@ export default function Blog() {
               I was quoted $60,000 per year for Crayon. For competitive intelligence software.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Don't get me wrong—Crayon and Klue are excellent products. But they're built for enterprises with 500+ employees and dedicated competitive intelligence teams. For a startup with 50-100 employees? That pricing is insane.
+              Don't get me wrong, Crayon and Klue are excellent products. But they're built for enterprises with 500+ employees and dedicated competitive intelligence teams. For a startup with 50-100 employees? That pricing is insane.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               So I did what any frustrated founder would do: I built an alternative.
@@ -63,13 +63,13 @@ export default function Blog() {
               As I researched Crayon and Klue, I noticed something interesting about their battlecard philosophy: they emphasize brevity. Their best practices recommend 1-2 page battlecards with character limits per section (Klue limits sections to 2,000 characters).
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The reasoning makes sense—sales reps don't have time to read 20-page documents before a call. But here's the problem: <span className="font-semibold">that brevity comes at the cost of depth.</span>
+              The reasoning makes sense: sales reps don't have time to read 20-page documents before a call. But here's the problem: <span className="font-semibold">that brevity comes at the cost of depth.</span>
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               I wanted the opposite: <span className="font-semibold">20+ pages of comprehensive research that I never had to read.</span>
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              That's where AI comes in. Instead of forcing humans to choose between depth and usability, why not have AI ingest 20+ pages of context—full review mining, customer quotes, detailed SWOT analysis, pricing intel—and synthesize that into instant answers when you need them?
+              That's where AI comes in. Instead of forcing humans to choose between depth and usability, why not have AI ingest 20+ pages of context (full review mining, customer quotes, detailed SWOT analysis, pricing intel) and synthesize that into instant answers when you need them?
             </p>
 
             {/* Built for Slack */}

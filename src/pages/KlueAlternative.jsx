@@ -48,12 +48,12 @@ export default function KlueAlternative() {
     {
       icon: DollarSign,
       title: "96% Cost Savings",
-      description: "Klue costs $50k-$100k annually. BattleCard AI costs $199/month ($2,388/year). Get the same competitive intelligence—actually deeper research—without the enterprise pricing."
+      description: "Klue costs $50k-$100k annually. BattleCard AI costs $199/month ($2,388/year). Get the same competitive intelligence, actually deeper research, without the enterprise pricing."
     },
     {
       icon: Database,
       title: "No Character Limits",
-      description: "Klue limits sections to 2,000 characters for 'optimal engagement.' We don't artificially limit depth—our battlecards contain 20+ pages of comprehensive research, full review mining, and detailed competitive analysis."
+      description: "Klue limits sections to 2,000 characters for 'optimal engagement.' We don't artificially limit depth. Our battlecards contain 20+ pages of comprehensive research, full review mining, and detailed competitive analysis."
     },
     {
       icon: MessageSquare,
@@ -63,7 +63,7 @@ export default function KlueAlternative() {
     {
       icon: Clock,
       title: "2 Minutes vs 6 Weeks",
-      description: "Klue requires weeks of onboarding, training, and content migration. BattleCard AI takes 2 minutes—connect Slack, mention a competitor, done. Start getting intel immediately."
+      description: "Klue requires weeks of onboarding, training, and content migration. BattleCard AI takes 2 minutes: connect Slack, mention a competitor, done. Start getting intel immediately."
     }
   ];
 
@@ -93,7 +93,7 @@ export default function KlueAlternative() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              Klue is great—if you're enterprise and can afford $50k+/year. BattleCard AI delivers deeper research (20+ pages vs 2,000 character limits), lives in Slack where your team already works, and costs 96% less.
+              Klue is great if you're enterprise and can afford $50k+/year. BattleCard AI delivers deeper research (20+ pages vs 2,000 character limits), lives in Slack where your team already works, and costs 96% less.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

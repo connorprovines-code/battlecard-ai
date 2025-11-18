@@ -54,7 +54,7 @@ export default function BlogKluePricing() {
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-8">
               <p className="text-blue-900 font-semibold mb-2">🔍 What We Found</p>
               <p className="text-gray-700">
-                Based on customer reports, Vendr pricing data, and G2 reviews, Klue's typical total cost for a mid-market company ranges from <span className="font-bold">$50,000 to $100,000+ per year</span>. Here's how that number breaks down—and the hidden costs no one tells you about.
+                Based on customer reports, Vendr pricing data, and G2 reviews, Klue's typical total cost for a mid-market company ranges from <span className="font-bold">$50,000 to $100,000+ per year</span>. Here's how that number breaks down, and the hidden costs no one tells you about.
               </p>
             </div>
 
@@ -135,7 +135,7 @@ export default function BlogKluePricing() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The 7-8 Week Setup Time (Hidden Cost #3)</h2>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Klue's pricing calculator estimates <span className="font-semibold">7-8 weeks for full implementation.</span> That's not just onboarding—that's when you actually start getting value.
+              Klue's pricing calculator estimates <span className="font-semibold">7-8 weeks for full implementation.</span> That's not just onboarding; that's when you actually start getting value.
             </p>
 
             <div className="flex items-start gap-4 bg-red-50 border border-red-200 rounded-xl p-6 mb-8">
@@ -195,12 +195,12 @@ export default function BlogKluePricing() {
             <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-8">
               <p className="text-gray-800 font-semibold mb-2">Translation:</p>
               <p className="text-gray-700">
-                Klue's UX assumption is that sales reps won't read long content. So they artificially limit battlecard depth—which means you're getting <span className="font-semibold">breadth over depth</span> at a premium price.
+                Klue's UX assumption is that sales reps won't read long content. So they artificially limit battlecard depth, which means you're getting <span className="font-semibold">breadth over depth</span> at a premium price.
               </p>
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              But what if you could have <span className="font-semibold">both</span> depth and accessibility? That's where AI synthesis helps: 20+ pages of research that sales reps never have to read—they just ask questions in Slack and get instant answers.
+              But what if you could have <span className="font-semibold">both</span> depth and accessibility? That's where AI synthesis helps: 20+ pages of research that sales reps never have to read. They just ask questions in Slack and get instant answers.
             </p>
 
             {/* Section 6 */}
@@ -227,7 +227,7 @@ export default function BlogKluePricing() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Notice what's <span className="font-semibold">not</span> being said: "Klue is affordable." The reviews acknowledge the high cost—they just argue it's worth it <span className="italic">compared to other $60k platforms.</span>
+              Notice what's <span className="font-semibold">not</span> being said: "Klue is affordable." The reviews acknowledge the high cost; they just argue it's worth it <span className="italic">compared to other $60k platforms.</span>
             </p>
 
             {/* Section 7 */}
@@ -300,7 +300,7 @@ export default function BlogKluePricing() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">The Bottom Line on Klue Pricing</h2>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Klue is a <span className="font-semibold">excellent product</span>—if you're enterprise, have $60k-$100k to spend, and can wait 7-8 weeks for implementation.
+              Klue is a <span className="font-semibold">excellent product</span> if you're enterprise, have $60k-$100k to spend, and can wait 7-8 weeks for implementation.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6">

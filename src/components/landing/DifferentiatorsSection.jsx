@@ -6,7 +6,7 @@ export default function DifferentiatorsSection() {
     {
       icon: Database,
       title: "Unmatched Depth",
-      description: "20+ pages of deep research per battlecard—including full review data mining, customer quotes, competitive positioning, SWOT analysis, tactical discovery questions, and objection handling. Our AI synthesizes all this context into instant Slack answers.",
+      description: "20+ pages of deep research per battlecard, including full review data mining, customer quotes, competitive positioning, SWOT analysis, tactical discovery questions, and objection handling. Our AI synthesizes all this context into instant Slack answers.",
       gradient: "from-purple-500 to-indigo-600"
     },
     {
