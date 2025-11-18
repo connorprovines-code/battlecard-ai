@@ -17,18 +17,21 @@ export default function CalendlyModal({ isOpen, onClose }) {
 
     // Load and initialize Calendly script
     const initCalendly = () => {
-      if (window.Calendly && containerRef.current) {
-        // Clear any existing widget
-        containerRef.current.innerHTML = '';
+      // Add a small delay to ensure DOM is ready
+      setTimeout(() => {
+        if (window.Calendly && containerRef.current) {
+          // Clear any existing widget
+          containerRef.current.innerHTML = '';
 
-        // Initialize inline widget
-        window.Calendly.initInlineWidget({
-          url: 'https://calendly.com/connorprovines/30min',
-          parentElement: containerRef.current,
-          prefill: {},
-          utm: {}
-        });
-      }
+          // Initialize inline widget
+          window.Calendly.initInlineWidget({
+            url: 'https://calendly.com/connorprovines/30min',
+            parentElement: containerRef.current,
+            prefill: {},
+            utm: {}
+          });
+        }
+      }, 100);
     };
 
     if (window.Calendly) {
@@ -75,7 +78,8 @@ export default function CalendlyModal({ isOpen, onClose }) {
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10"
+          className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+          style={{ zIndex: 10 }}
           aria-label="Close modal"
         >
           <X className="w-5 h-5 text-gray-600" />
@@ -84,7 +88,7 @@ export default function CalendlyModal({ isOpen, onClose }) {
         {/* Calendly widget container */}
         <div
           ref={containerRef}
-          style={{ width: '100%', height: '100%' }}
+          style={{ width: '100%', height: '100%', minHeight: '600px' }}
         />
       </div>
     </div>
