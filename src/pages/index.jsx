@@ -1,13 +1,19 @@
 import Layout from "./Layout.jsx";
 
 import Home from "./Home";
+import CrayonAlternative from "./CrayonAlternative";
+import KlueAlternative from "./KlueAlternative";
+import Blog from "./Blog";
+import CrayonVsKlue from "./CrayonVsKlue";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
-    
     Home: Home,
-    
+    CrayonAlternative: CrayonAlternative,
+    KlueAlternative: KlueAlternative,
+    Blog: Blog,
+    CrayonVsKlue: CrayonVsKlue,
 }
 
 function _getCurrentPage(url) {
@@ -30,13 +36,13 @@ function PagesContent() {
     
     return (
         <Layout currentPageName={currentPage}>
-            <Routes>            
-                
-                    <Route path="/" element={<Home />} />
-                
-                
+            <Routes>
+                <Route path="/" element={<Home />} />
                 <Route path="/Home" element={<Home />} />
-                
+                <Route path="/crayon-alternative" element={<CrayonAlternative />} />
+                <Route path="/klue-alternative" element={<KlueAlternative />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/crayon-vs-klue" element={<CrayonVsKlue />} />
             </Routes>
         </Layout>
     );
