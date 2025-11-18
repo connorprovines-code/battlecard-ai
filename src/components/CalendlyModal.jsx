@@ -1,44 +1,45 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
 
 export default function CalendlyModal({ isOpen, onClose }) {
+  const containerRef = useRef(null);
+
   useEffect(() => {
     if (!isOpen) return;
 
     // Load Calendly CSS
-    const link = document.createElement('link');
-    link.href = 'https://assets.calendly.com/assets/external/widget.css';
-    link.rel = 'stylesheet';
     if (!document.querySelector('link[href*="calendly"]')) {
+      const link = document.createElement('link');
+      link.href = 'https://assets.calendly.com/assets/external/widget.css';
+      link.rel = 'stylesheet';
       document.head.appendChild(link);
     }
 
     // Load and initialize Calendly script
-    const loadCalendly = () => {
-      if (window.Calendly) {
-        // Calendly is already loaded, just initialize
+    const initCalendly = () => {
+      if (window.Calendly && containerRef.current) {
+        // Clear any existing widget
+        containerRef.current.innerHTML = '';
+
+        // Initialize inline widget
         window.Calendly.initInlineWidget({
           url: 'https://calendly.com/connorprovines/30min',
-          parentElement: document.querySelector('.calendly-inline-widget'),
+          parentElement: containerRef.current,
+          prefill: {},
+          utm: {}
         });
-      } else {
-        // Load Calendly script
-        const script = document.createElement('script');
-        script.src = 'https://assets.calendly.com/assets/external/widget.js';
-        script.async = true;
-        script.onload = () => {
-          if (window.Calendly) {
-            window.Calendly.initInlineWidget({
-              url: 'https://calendly.com/connorprovines/30min',
-              parentElement: document.querySelector('.calendly-inline-widget'),
-            });
-          }
-        };
-        document.body.appendChild(script);
       }
     };
 
-    loadCalendly();
+    if (window.Calendly) {
+      initCalendly();
+    } else {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      script.onload = initCalendly;
+      document.body.appendChild(script);
+    }
   }, [isOpen]);
 
   useEffect(() => {
@@ -82,7 +83,7 @@ export default function CalendlyModal({ isOpen, onClose }) {
 
         {/* Calendly widget container */}
         <div
-          className="calendly-inline-widget"
+          ref={containerRef}
           style={{ width: '100%', height: '100%' }}
         />
       </div>
