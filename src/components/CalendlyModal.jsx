@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 
 export default function CalendlyModal({ isOpen, onClose }) {
@@ -64,7 +65,8 @@ export default function CalendlyModal({ isOpen, onClose }) {
 
   if (!isOpen) return null;
 
-  return (
+  // Render modal using portal to ensure it's at document body level
+  return createPortal(
     <div
       className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4"
       style={{ zIndex: 9999 }}
@@ -91,6 +93,7 @@ export default function CalendlyModal({ isOpen, onClose }) {
           style={{ width: '100%', height: '100%', minHeight: '600px' }}
         />
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
