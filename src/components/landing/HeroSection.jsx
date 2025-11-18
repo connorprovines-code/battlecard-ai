@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
+import CalendlyModal from '../CalendlyModal';
 
 export default function HeroSection() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
+
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
+    <>
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-indigo-50">
       {/* Gradient orbs in background */}
       <div className="absolute top-20 left-10 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -37,10 +41,10 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
+              <Button
                 size="lg"
                 className="text-lg px-8 py-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => setCalendlyOpen(true)}
               >
                 Get Your First Battlecard Free
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -166,6 +170,9 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
     </section>
+    </>
   );
 }

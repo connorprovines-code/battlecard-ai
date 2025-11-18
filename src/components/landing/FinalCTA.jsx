@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import CalendlyModal from '../CalendlyModal';
 
 export default function FinalCTA() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
+
   return (
+    <>
     <section className="py-24 bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-600 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 opacity-10">
@@ -29,10 +33,10 @@ export default function FinalCTA() {
 
         {/* CTA Button */}
         <div className="flex flex-col items-center gap-6">
-          <Button 
+          <Button
             size="lg"
             className="text-lg px-12 py-7 bg-white text-indigo-600 hover:bg-gray-50 shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 font-bold"
-            onClick={() => window.open('https://calendly.com', '_blank')}
+            onClick={() => setCalendlyOpen(true)}
           >
             Get Your First Battlecard Free
             <ArrowRight className="ml-3 w-6 h-6" />
@@ -59,6 +63,9 @@ export default function FinalCTA() {
           </div>
         </div>
       </div>
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
     </section>
+    </>
   );
 }

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check, X } from 'lucide-react';
 import Footer from '../components/landing/Footer';
+import CalendlyModal from '../components/CalendlyModal';
 import SEO from '../components/SEO';
 
 export default function CrayonVsKlue() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
   const comparison = [
     {
       category: "Pricing",
@@ -362,7 +364,7 @@ export default function CrayonVsKlue() {
           <Button
             size="lg"
             className="text-lg px-12 py-7 bg-white text-indigo-600 hover:bg-gray-50 shadow-2xl hover:scale-105 transition-all duration-300 font-bold"
-            onClick={() => window.open('https://calendly.com', '_blank')}
+            onClick={() => setCalendlyOpen(true)}
           >
             Get Your First Battlecard Free
             <ArrowRight className="ml-3 w-6 h-6" />
@@ -372,6 +374,8 @@ export default function CrayonVsKlue() {
           </p>
         </div>
       </section>
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
 
       <Footer />
     </div>

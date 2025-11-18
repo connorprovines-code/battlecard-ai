@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import Footer from '../components/landing/Footer';
+import CalendlyModal from '../components/CalendlyModal';
 import SEO from '../components/SEO';
 import { ArticleSchema } from '../components/Schema';
 import RelatedArticles from '../components/RelatedArticles';
 
 export default function Blog() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white pt-16">
       <SEO
@@ -105,6 +107,9 @@ export default function Blog() {
               <li>Update battlecards in real-time as competitors change</li>
             </ul>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              But here's my favorite part: BattleCard AI loads your product as "us" and gives honest win/loss comparisons. It doesn't just tell you where you beat competitors. It also shows where you lose. That kind of honesty prepares your sales team for real objections instead of just cheerleading.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               And you get all this for $199/month instead of $5,000+/month.
             </p>
 
@@ -148,7 +153,7 @@ export default function Blog() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => setCalendlyOpen(true)}
               >
                 Get Your First Battlecard Free
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -159,6 +164,8 @@ export default function Blog() {
       </article>
 
       <RelatedArticles currentSlug="/blog/why-i-built-battlecard-ai" />
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
 
       <Footer />
     </div>

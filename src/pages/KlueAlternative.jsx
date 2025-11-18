@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, DollarSign, Clock, MessageSquare, Database } from 'lucide-react';
 import Footer from '../components/landing/Footer';
+import CalendlyModal from '../components/CalendlyModal';
 import SEO from '../components/SEO';
 
 export default function KlueAlternative() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
   const comparison = [
     {
       feature: "Annual Cost",
@@ -35,6 +37,12 @@ export default function KlueAlternative() {
       klue: "60 seconds with Ask Klue AI",
       battlecard: "Minutes, fully automated",
       winner: "tie"
+    },
+    {
+      feature: "Competitive Positioning",
+      klue: "Highlights your strengths",
+      battlecard: "Honest win/loss analysis (shows where you win AND lose)",
+      winner: "battlecard"
     },
     {
       feature: "Best For",
@@ -100,7 +108,7 @@ export default function KlueAlternative() {
               <Button
                 size="lg"
                 className="text-lg px-8 py-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-xl"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => setCalendlyOpen(true)}
               >
                 Get Your First Battlecard Free
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -242,7 +250,7 @@ export default function KlueAlternative() {
           <Button
             size="lg"
             className="text-lg px-12 py-7 bg-white text-indigo-600 hover:bg-gray-50 shadow-2xl hover:scale-105 transition-all duration-300 font-bold"
-            onClick={() => window.open('https://calendly.com', '_blank')}
+            onClick={() => setCalendlyOpen(true)}
           >
             Get Your First Battlecard Free
             <ArrowRight className="ml-3 w-6 h-6" />
@@ -252,6 +260,8 @@ export default function KlueAlternative() {
           </p>
         </div>
       </section>
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
 
       <Footer />
     </div>

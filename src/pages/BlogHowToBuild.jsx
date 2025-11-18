@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/landing/Footer';
+import CalendlyModal from '../components/CalendlyModal';
 import SEO from '../components/SEO';
 import { ArticleSchema } from '../components/Schema';
 import RelatedArticles from '../components/RelatedArticles';
 
 export default function BlogHowToBuild() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white pt-16">
       <SEO
@@ -264,7 +266,7 @@ export default function BlogHowToBuild() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 mb-4"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => setCalendlyOpen(true)}
               >
                 Get Your First Battlecard Free
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -293,6 +295,8 @@ export default function BlogHowToBuild() {
       </article>
 
       <RelatedArticles currentSlug="/blog/how-to-build-battlecards" />
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
 
       <Footer />
     </div>

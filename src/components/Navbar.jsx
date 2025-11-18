@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import CalendlyModal from './CalendlyModal';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
   const location = useLocation();
 
   const navigation = [
@@ -12,6 +14,7 @@ export default function Navbar() {
     { name: 'Crayon Alternative', href: '/crayon-alternative' },
     { name: 'Klue Alternative', href: '/klue-alternative' },
     { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const isActive = (href) => {
@@ -72,7 +75,7 @@ export default function Navbar() {
             <Button
               size="sm"
               className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700"
-              onClick={() => window.open('https://calendly.com', '_blank')}
+              onClick={() => setCalendlyOpen(true)}
             >
               Get Started
             </Button>
@@ -122,7 +125,7 @@ export default function Navbar() {
                 size="sm"
                 className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700"
                 onClick={() => {
-                  window.open('https://calendly.com', '_blank');
+                  setCalendlyOpen(true);
                   setMobileMenuOpen(false);
                 }}
               >
@@ -132,6 +135,8 @@ export default function Navbar() {
           </div>
         </div>
       )}
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
     </nav>
   );
 }

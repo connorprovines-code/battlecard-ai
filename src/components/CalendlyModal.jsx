@@ -1,0 +1,61 @@
+import React, { useEffect } from 'react';
+import { X } from 'lucide-react';
+
+export default function CalendlyModal({ isOpen, onClose }) {
+  useEffect(() => {
+    // Load Calendly script when modal opens
+    if (isOpen && !document.querySelector('script[src*="calendly"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://assets.calendly.com/assets/external/widget.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    // Handle ESC key to close modal
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+
+    if (isOpen) {
+      document.addEventListener('keydown', handleEsc);
+      document.body.style.overflow = 'hidden';
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEsc);
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
+
+  return (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+      onClick={onClose}
+    >
+      <div
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors"
+          aria-label="Close modal"
+        >
+          <X className="w-5 h-5 text-gray-600" />
+        </button>
+
+        {/* Calendly widget */}
+        <div
+          className="calendly-inline-widget"
+          data-url="https://calendly.com/connorprovines/30min"
+          style={{ minWidth: '320px', height: '700px' }}
+        />
+      </div>
+    </div>
+  );
+}

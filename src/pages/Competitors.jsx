@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/landing/Footer';
+import CalendlyModal from '../components/CalendlyModal';
 import SEO from '../components/SEO';
 
 export default function Competitors() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
   const competitors = [
     {
       name: "Crayon",
@@ -130,7 +132,7 @@ export default function Competitors() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700"
-                  onClick={() => window.open('https://calendly.com', '_blank')}
+                  onClick={() => setCalendlyOpen(true)}
                 >
                   Get Your First Battlecard Free
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -285,7 +287,7 @@ export default function Competitors() {
               <Button
                 size="lg"
                 className="mt-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => setCalendlyOpen(true)}
               >
                 Get Started Free
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -327,7 +329,7 @@ export default function Competitors() {
           <Button
             size="lg"
             className="text-lg px-12 py-7 bg-white text-indigo-600 hover:bg-gray-50 shadow-2xl hover:scale-105 transition-all duration-300 font-bold"
-            onClick={() => window.open('https://calendly.com', '_blank')}
+            onClick={() => setCalendlyOpen(true)}
           >
             Get Your First Battlecard Free
             <ArrowRight className="ml-3 w-6 h-6" />
@@ -337,6 +339,8 @@ export default function Competitors() {
           </p>
         </div>
       </section>
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
 
       <Footer />
     </div>

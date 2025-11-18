@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Check, ArrowRight } from 'lucide-react';
+import CalendlyModal from '../CalendlyModal';
 
 export default function PricingSection() {
+  const [calendlyOpen, setCalendlyOpen] = useState(false);
+
   const features = [
     "Unlimited battlecard generation",
     "Real-time Slack Q&A",
@@ -13,6 +16,7 @@ export default function PricingSection() {
   ];
 
   return (
+    <>
     <section id="pricing" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
@@ -56,10 +60,10 @@ export default function PricingSection() {
               </ul>
 
               {/* CTA */}
-              <Button 
+              <Button
                 size="lg"
                 className="w-full text-lg py-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://calendly.com', '_blank')}
+                onClick={() => setCalendlyOpen(true)}
               >
                 Get Your First Battlecard Free
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -85,6 +89,9 @@ export default function PricingSection() {
           </div>
         </div>
       </div>
+
+      <CalendlyModal isOpen={calendlyOpen} onClose={() => setCalendlyOpen(false)} />
     </section>
+    </>
   );
 }

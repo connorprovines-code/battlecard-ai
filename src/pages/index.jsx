@@ -9,6 +9,7 @@ import CrayonVsKlue from "./CrayonVsKlue";
 import Competitors from "./Competitors";
 import BlogHowToBuild from "./BlogHowToBuild";
 import BlogKluePricing from "./BlogKluePricing";
+import Contact from "./Contact";
 import NotFound from "./NotFound";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
@@ -23,6 +24,7 @@ const PAGES = {
     Competitors: Competitors,
     BlogHowToBuild: BlogHowToBuild,
     BlogKluePricing: BlogKluePricing,
+    Contact: Contact,
     NotFound: NotFound,
 }
 
@@ -57,6 +59,7 @@ function PagesContent() {
                 <Route path="/competitors" element={<Competitors />} />
                 <Route path="/blog/how-to-build-battlecards" element={<BlogHowToBuild />} />
                 <Route path="/blog/klue-pricing" element={<BlogKluePricing />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </Layout>
