@@ -4,6 +4,8 @@ import { ArrowRight, DollarSign, Users, Clock, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/landing/Footer';
 import SEO from '../components/SEO';
+import { ArticleSchema } from '../components/Schema';
+import RelatedArticles from '../components/RelatedArticles';
 
 export default function BlogKluePricing() {
   return (
@@ -12,6 +14,11 @@ export default function BlogKluePricing() {
         title="Klue Pricing in 2025: What They Don't Tell You About the Real Cost"
         description="The truth about Klue pricing: per-user costs, hidden fees, 7-8 week setup, and why SMBs pay the enterprise tax. Real pricing insights from customer data."
         keywords="klue pricing, klue cost, competitive intelligence pricing, klue alternatives, how much does klue cost"
+        url="https://battlecard.ai/blog/klue-pricing"
+      />
+      <ArticleSchema
+        headline="Klue Pricing in 2025: What They Don't Tell You About the Real Cost"
+        description="The truth about Klue pricing: per-user costs, hidden fees, 7-8 week setup, and why SMBs pay the enterprise tax."
         url="https://battlecard.ai/blog/klue-pricing"
       />
 
@@ -306,6 +313,8 @@ export default function BlogKluePricing() {
           </div>
         </div>
       </article>
+
+      <RelatedArticles currentSlug="/blog/klue-pricing" />
 
       <Footer />
     </div>
