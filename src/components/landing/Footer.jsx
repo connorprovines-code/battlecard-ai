@@ -27,12 +27,12 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="text-right">
-            <a 
-              href="mailto:hello@battlecard.ai" 
+            <a
+              href="mailto:connorprovines@gmail.com"
               className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors mb-4"
             >
               <Mail className="w-4 h-4" />
-              hello@battlecard.ai
+              connorprovines@gmail.com
             </a>
             <div className="space-x-4 text-sm">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
