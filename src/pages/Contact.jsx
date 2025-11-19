@@ -55,7 +55,7 @@ export default function Contact() {
         title="Contact Us | BattleCard AI"
         description="Get in touch with the BattleCard AI team. Have questions about competitive intelligence? We're here to help."
         keywords="contact battlecard ai, competitive intelligence support, contact us"
-        url="https://battlecard.ai/contact"
+        url="https://www.battlecardhq.com/contact"
       />
 
       {/* Hero Section */}

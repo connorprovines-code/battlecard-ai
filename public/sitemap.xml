@@ -1,51 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://battlecard.ai/</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://battlecard.ai/crayon-alternative</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/crayon-alternative</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://battlecard.ai/klue-alternative</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/klue-alternative</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://battlecard.ai/crayon-vs-klue</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/crayon-vs-klue</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://battlecard.ai/competitors</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/competitors</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://battlecard.ai/blog</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/blog</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://battlecard.ai/blog/how-to-build-battlecards</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/blog/why-i-built-battlecard-ai</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://battlecard.ai/blog/klue-pricing</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.battlecardhq.com/blog/how-to-build-battlecards</loc>
+    <lastmod>2025-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.battlecardhq.com/blog/klue-pricing</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.battlecardhq.com/contact</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

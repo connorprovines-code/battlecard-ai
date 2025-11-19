@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://battlecard.ai/sitemap.xml
+Sitemap: https://www.battlecardhq.com/sitemap.xml

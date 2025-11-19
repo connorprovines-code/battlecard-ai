@@ -15,12 +15,12 @@ export default function Blog() {
         title="Why I Built BattleCard AI: A Better Alternative to Crayon & Klue"
         description="The founder story behind BattleCard AI. Why $60k/year for competitive intelligence doesn't work for startups, and how we built a better alternative at $199/month."
         keywords="battlecard ai founder story, crayon alternative story, competitive intelligence startup, why build battlecard ai"
-        url="https://battlecard.ai/blog/why-i-built-battlecard-ai"
+        url="https://www.battlecardhq.com/blog/why-i-built-battlecard-ai"
       />
       <ArticleSchema
         headline="Why I Built BattleCard AI: A Better Alternative to Crayon & Klue"
         description="The founder story behind BattleCard AI. Why $60k/year for competitive intelligence doesn't work for startups."
-        url="https://battlecard.ai/blog/why-i-built-battlecard-ai"
+        url="https://www.battlecardhq.com/blog/why-i-built-battlecard-ai"
       />
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-slate-50 via-white to-indigo-50">

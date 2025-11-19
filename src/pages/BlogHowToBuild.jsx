@@ -16,12 +16,12 @@ export default function BlogHowToBuild() {
         title="How to Build Competitive Battlecards Without Paying $60k/Year"
         description="Step-by-step guide to creating effective competitive battlecards without enterprise software. Learn the DIY approach that works for startups and SMBs."
         keywords="how to build battlecards, competitive battlecards guide, battlecard template, competitive intelligence DIY"
-        url="https://battlecard.ai/blog/how-to-build-battlecards"
+        url="https://www.battlecardhq.com/blog/how-to-build-battlecards"
       />
       <ArticleSchema
         headline="How to Build Competitive Battlecards Without Paying $60k/Year"
         description="Step-by-step guide to creating effective competitive battlecards without enterprise software."
-        url="https://battlecard.ai/blog/how-to-build-battlecards"
+        url="https://www.battlecardhq.com/blog/how-to-build-battlecards"
       />
 
       {/* Hero */}

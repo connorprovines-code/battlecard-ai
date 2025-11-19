@@ -74,7 +74,7 @@ export default function Competitors() {
         title="BattleCard AI vs Crayon vs Klue vs Kompyte - Competitor Comparison 2025"
         description="Compare BattleCard AI against Crayon, Klue, Kompyte, and other competitive intelligence platforms. See pricing, features, and find the best fit for your team."
         keywords="competitive intelligence comparison, crayon vs klue, battlecard software comparison, competitive analysis tools"
-        url="https://battlecard.ai/competitors"
+        url="https://www.battlecardhq.com/competitors"
       />
 
       {/* Hero Section */}

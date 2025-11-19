@@ -41,7 +41,7 @@ export default function BlogIndex() {
         title="BattleCard AI Blog - Competitive Intelligence Insights & Guides"
         description="Learn about competitive intelligence, battlecard strategies, and alternatives to expensive enterprise platforms like Crayon and Klue."
         keywords="competitive intelligence blog, battlecard guide, crayon alternative blog, klue pricing analysis"
-        url="https://battlecard.ai/blog"
+        url="https://www.battlecardhq.com/blog"
       />
 
       {/* Hero Section */}

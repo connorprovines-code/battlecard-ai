@@ -8,7 +8,7 @@ export function ArticleSchema({
   datePublished = "2025-01-18",
   dateModified = "2025-01-18",
   url,
-  imageUrl = "https://battlecard.ai/og-image.jpg"
+  imageUrl = "https://www.battlecardhq.com/og-image.jpg"
 }) {
   const schema = {
     "@context": "https://schema.org",
@@ -27,7 +27,7 @@ export function ArticleSchema({
       "name": "BattleCard AI",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://battlecard.ai/logo.png"
+        "url": "https://www.battlecardhq.com/logo.png"
       }
     },
     "mainEntityOfPage": {
@@ -52,8 +52,8 @@ export function OrganizationSchema() {
     "@type": "Organization",
     "name": "BattleCard AI",
     "alternateName": "BattleCard AI",
-    "url": "https://battlecard.ai",
-    "logo": "https://battlecard.ai/logo.png",
+    "url": "https://www.battlecardhq.com",
+    "logo": "https://www.battlecardhq.com/logo.png",
     "description": "AI-powered competitive intelligence platform delivering 20+ page battlecards at 1/100th the cost of enterprise solutions like Crayon and Klue.",
     "foundingDate": "2025",
     "sameAs": [
@@ -63,7 +63,7 @@ export function OrganizationSchema() {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Sales",
-      "url": "https://battlecard.ai"
+      "url": "https://www.battlecardhq.com"
     },
     "offers": {
       "@type": "Offer",

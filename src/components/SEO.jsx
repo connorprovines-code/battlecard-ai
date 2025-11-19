@@ -5,8 +5,8 @@ export default function SEO({
   title = "BattleCard AI - Enterprise Competitive Intelligence at 1/100th the Price",
   description = "AI-powered battlecards in minutes, not days. 20+ page deep-research battlecards for $199/month vs $60k/year. Slack-native competitive intelligence for startups.",
   keywords = "competitive intelligence, battlecards, crayon alternative, klue alternative, sales enablement, competitive analysis",
-  ogImage = "https://battlecard.ai/og-image.jpg",
-  url = "https://battlecard.ai"
+  ogImage = "https://www.battlecardhq.com/og-image.jpg",
+  url = "https://www.battlecardhq.com"
 }) {
   return (
     <Helmet>

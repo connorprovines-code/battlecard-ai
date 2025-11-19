@@ -133,7 +133,7 @@ export default function CrayonVsKlue() {
         title="Crayon vs Klue vs BattleCard AI: Complete Comparison 2025"
         description="Side-by-side comparison of Crayon, Klue, and BattleCard AI. Compare pricing ($60k vs $199/mo), features, research depth, and find the best fit for your team."
         keywords="crayon vs klue, competitive intelligence comparison, battlecard software comparison, crayon klue alternative"
-        url="https://battlecard.ai/crayon-vs-klue"
+        url="https://www.battlecardhq.com/crayon-vs-klue"
       />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-indigo-50">
